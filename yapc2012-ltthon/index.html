@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/impress.css" rel="stylesheet" />
+</head>
+<body>
+<div id="impress" class="impress-not-supported">
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b> or <b>Safari</b> browser. Firefox 10 (to be released soon) will also handle it.</p>
+    </div>
+
+<div id="title" class="step" data-y="0" data-x="0">
+<h2>Emacsで楽しいチャット</h2>
+
+</div>
+<div class="step" data-y="0" data-x="1200">
+<h2>自己紹介</h2>
+
+<ul>
+<li><p>ウチコ (@memememomo)</p></li>
+<li><p>京都でプログラマをやってます</p></li>
+</ul>
+
+</div>
+<div class="step" data-y="0" data-x="2400">
+<h2>　</h2>
+
+<p><center><img src="./emacs.jpg" width="70%"></center></p>
+
+</div>
+<div class="step" data-y="0" data-x="3600">
+<h2>Emacsでチャットしたい</h2>
+
+</div>
+<div class="step" data-y="0" data-x="4800">
+<h2>チャットシステム構成</h2>
+
+<p><img src="./pict.png"></p>
+
+</div>
+<div class="step" data-y="800" data-x="0">
+<h2>サーバ側</h2>
+
+<ul>
+<li><p>Amon2::Lite</p>
+
+<p>WebSocketプラグイン</p></li>
+</ul>
+
+</div>
+<div class="step" data-y="800" data-x="1200">
+<h2>クライアント側</h2>
+
+<ul>
+<li><p>websocket.el</p>
+
+<p>WebSocketライブラリ</p></li>
+</ul>
+
+</div>
+<div class="step" data-y="800" data-x="2400">
+<h2>設定</h2>
+
+<pre><code>(require 'websocket-chat)
+(setq wsc:host "192.168.56.111")
+(setq wsc:port 5000)
+</code></pre>
+
+</div>
+<div class="step" data-y="800" data-x="3600">
+<h1>デモ</h1>
+
+</div>
+<div class="step" data-y="800" data-x="4800">
+<h1>ご清聴ありがとうございました</h1>
+
+</div>
+
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+<script src="js/impress.js"></script>
+
+</body>
+</html>
+
